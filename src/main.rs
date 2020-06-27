@@ -2,7 +2,7 @@ use macroquad::*;
 
 use glam::vec3;
 
-#[macroquad::main("3D")]
+#[macroquad::main("What does this do?")]
 async fn main() {
     let rust_logo = load_texture("resources/rust.png").await;
     let ferris = load_texture("resources/ferris.png").await;
