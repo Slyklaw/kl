@@ -1,0 +1,21 @@
+[package]
+name = "kl"
+version = "0.0.1"
+authors = ["slyklaw <slyklaw@gmail.com>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+readme="README.md"
+
+[features]
+default = ["log-impl"]
+log-impl = ["miniquad/log-impl"]
+
+[dependencies]
+miniquad = { version = "=0.3.0-alpha.7" }
+macroquad = "0.2.5"
+quad-gl = { version = "=0.2.1" }
+quad-rand = "0.1"
+glam = {version = "0.8", features = ["scalar-math"] }
+image = { version = "0.22", default-features = false, features = ["png_codec", "tga"] }
+megaui = { version = "=0.2.11" }
+macroquad_macro = "0.1"
